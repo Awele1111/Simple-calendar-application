@@ -17,12 +17,25 @@ $(function () {
   // useful when saving the description in local storage?
   //
   var saveBtnEl = $(".saveBtn")
+  // console.log(saveBtnEl);
   saveBtnEl.on('click', function(event) {
     
     var text = $(this).siblings(".description").val()
+    console.log(text);
+    
     var hour = $(this).parent().attr("id")
+    console.log(hour);
   localStorage.setItem(hour,text)
+  
   })
+
+  var hour = localStorage.getItem("hour-9")
+  console.log(hour);
+  var timeblockHourNine = $("#hour-9").children("textarea");
+  console.log(timeblockHourNine)
+  timeblockHourNine.val(hour)
+  $("#hour-10").children("textarea").val(localStorage.getItem("hour-10"))
+  $("#hour-11").children("textarea").val(localStorage.getItem("hour-11"))
 
 
   // TODO: Add code to apply the past, present, or future class to each time
@@ -33,7 +46,7 @@ $(function () {
   //
 
 $(".time-block").each(function() {
-  $(this).addClass("future"),
+  $(this).addClass("future")
 })
 
 
