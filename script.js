@@ -89,6 +89,9 @@ $(".time-block").each(function() {
 //   $(this).removeClass("present");
 // };      
 
+
+// please ignore the commented out code above, I was testing out different ways to write this code below &  in case I may need to refer back to it in the future:
+
 $(this).addClass("past");
 $(this).removeClass("present future");
 } else if (timeBlockHour === currentHour) {
