@@ -108,6 +108,8 @@ $(this).removeClass("past present");
   // attribute of each time-block be used to do this?
   //
 
+  // I commented out this code because it is a repetition of the code above
+
   // for (let i = 9; i < 18; i++) {
   //   let input = localStorage.getItem("time-" + i);
   //   if (input !== null) {
@@ -121,7 +123,7 @@ $(this).removeClass("past present");
   //   localStorage.setItem(time, input);
   // });
   
-
+  
   // TODO: Add code to display the current date in the header of the page.
   currentdayEl.text(dayjs().format('dddd, MMMM D, YYYY'))
 });
