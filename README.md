@@ -31,7 +31,7 @@ Below, are screenshots of how my web application currently looks like:
 
 
 
-![calendar](assets/readme.png)
+![calendar](Assets/readme.png)
 
 
 ## Credits
